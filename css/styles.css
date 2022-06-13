@@ -1,0 +1,44 @@
+/*   Цветовая палитра  */
+:root{
+    --bakrnd-color-first: #E5E5E5;
+    --bakrnd-color-second:#F5F4FA;
+    --footer-color: #2F303A;
+    --text-color-first: #212121;
+    --text-color-second: #757575;
+    --accent-color: #2196F3;
+}
+
+body{
+font-family: 'Roboto', 'Raleway', sans-serif;
+
+
+}
+
+.logo{
+    color: var(--accent-color) ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.logo-studio{
+    color:var(--text-color-first);
+}
+
+.site-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.link {
+    text-decoration: none;
+    color: var(--text-color-first);
+}
+
+.link:hover, link:focus{
+    color: var(--accent-color);
+}
+
