@@ -5,40 +5,99 @@
     --footer-color: #2F303A;
     --text-color-first: #212121;
     --text-color-second: #757575;
+    --text-color-tittle: #FFFFFF;
     --accent-color: #2196F3;
+
 }
 
 body{
 font-family: 'Roboto', 'Raleway', sans-serif;
-
+color: var(--text-color-first);
+font-style: normal;
 
 }
-
-.logo{
-    color: var(--accent-color) ;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-tittle);
 }
 
-.logo-studio{
-    color:var(--text-color-first);
-}
-
-.site-nav{
+header{
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
 }
-.link {
-    text-decoration: none;
-    color: var(--text-color-first);
+.logo{
+    color: var(--accent-color) ;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo-studio{
+    color:var(--text-color-first);
 }
 
-.link:hover, link:focus{
+
+.link {
+    color: var(--text-color-first);
+    font-family: 'Roboto';
+
+
+}
+.link-contakts{
+    color: var(--text-color-second);
+}
+
+.link:hover, link:focus, .link-contakts:hover, .link-contakts:focus{
     color: var(--accent-color);
 }
+ ul{
+   list-style-type: none; 
+ }
+a{
+    text-decoration: none;
+}
+.header-banner{
+    background-color: var(--footer-color);
+}
+.client-servise
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-color-tittle);
+}
 
+.techology-tittle
+{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.techology-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-second);
+}
+.works>h2{
+    
+}
