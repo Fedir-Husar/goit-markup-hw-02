@@ -1,103 +1,149 @@
-/*   Цветовая палитра  */
+
 :root{
+    /*   Цветовая палитра  */
     --bakrnd-color-first: #E5E5E5;
     --bakrnd-color-second:#F5F4FA;
     --footer-color: #2F303A;
-    --text-color-first: #212121;
-    --text-color-second: #757575;
-    --text-color-tittle: #FFFFFF;
+    --text-color-first: #757575;
+    --text-color-tittle:#212121;
+    --text-color-footer: rgba(255, 255, 255, 0.6);
+    --text-banner-color: #FFFFFF;
     --accent-color: #2196F3;
 
+     /*Шрифты */
+     --first-font: "Roboto";
+     --logo-font: "Relaway";
 }
-
+/*   Основные стили */
 body{
-font-family: 'Roboto', 'Raleway', sans-serif;
+font-family: "Roboto", "Raleway", sans-serif;
 color: var(--text-color-first);
-font-style: normal;
-
-}
-h1{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-color-tittle);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 }
 
-header{
-   
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+.link {
+    text-decoration: none;
+}
 
+.list {
+    list-style: none;
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.footer,
+.banner {
+    background-color: var(--footer-color);
+}
+
+.header-nav .header-link.current{
+color: var(--text-color-tittle);
+}
+
+/*   Стили хедера  */
+.header-list{
+color: var(--text-color-tittle);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+ 
+.header-link-contakts{
+color: var(--text-color-first);
 }
 .logo{
-    color: var(--accent-color) ;
-    font-family: 'Raleway';
+    color: var(--accent-color);
+    font-family:var(--logo-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 .logo-studio{
-    color:var(--text-color-first);
-}
-
-
-.link {
-    color: var(--text-color-first);
-    font-family: 'Roboto';
-
-
-}
-.link-contakts{
-    color: var(--text-color-second);
-}
-
-.link:hover, link:focus, .link-contakts:hover, .link-contakts:focus{
-    color: var(--accent-color);
-}
- ul{
-   list-style-type: none; 
- }
-a{
-    text-decoration: none;
-}
-.header-banner{
-    background-color: var(--footer-color);
-}
-.client-servise
-{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
     color: var(--text-color-tittle);
 }
 
-.techology-tittle
-{
+/*   Стили футера  */
+.footer-address{
+    color: var(--text-banner-color);
+    font-style: normal;
+}
+.footer-link{
+    color: var(--text-color-footer);
+}
+
+/*   Стили main  */
+
+.banner-button{
+    font-family: var(--first-font);
+    color: var(--text-banner-color);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.title{
+color: var(--text-color-tittle);
+font-weight: 700;
+line-height: 1.14;
+}
+
+.team-title, .works-title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-worker-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+}
+.team-worker-descr{
+    font-size: 16px;
+    line-height: 1.188;
+}
+.banner-title{
+    color: var(--text-banner-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
 }
-.techology-description{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--text-color-second);
+
+/* Портфолио стили */
+ .example-title {
+    color: var(--text-color-tittle);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
-.works>h2{
-    
+.example-desc{
+    color: var(--text-color-first);
+    font-size: 16px;
+    line-height: 1.86;
+}
+
+.portfolio-menu{
+    color: var(--text-color-tittle);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+}
+
+.portfolio-menu:hover, .portfolio-menu:focus{
+    color: var(--text-banner-color);
+    background-color: var(--accent-color);
 }
