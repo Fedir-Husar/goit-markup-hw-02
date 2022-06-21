@@ -1,29 +1,32 @@
-
-:root{
+:root {
     /*   Цветовая палитра  */
     --bakrnd-color-first: #E5E5E5;
-    --bakrnd-color-second:#F5F4FA;
+    --bakrnd-color-second: #F5F4FA;
     --footer-color: #2F303A;
     --text-color-first: #757575;
-    --text-color-tittle:#212121;
+    --text-color-tittle: #212121;
     --text-color-footer: rgba(255, 255, 255, 0.6);
     --text-banner-color: #FFFFFF;
     --accent-color: #2196F3;
 
-     /*Шрифты */
-     --first-font: "Roboto";
-     --logo-font: "Relaway";
-}
-/*   Основные стили */
-body{
-font-family: "Roboto", "Raleway", sans-serif;
-color: var(--text-color-first);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+    /*Шрифты */
+    --first-font: "Roboto";
+    --logo-font: "Raleway";
 }
 
+/*   Основные стили */
+body {
+    font-family: "Roboto","Raleway", sans-serif;
+    color: var(--text-color-first);
+    font-weight: 400;
+    font-size: 14px;
+    
+    letter-spacing: 0.03em;
+}
+
+.main{
+    line-height: 1.71;
+}
 .link {
     text-decoration: none;
 }
@@ -31,6 +34,7 @@ letter-spacing: 0.03em;
 .list {
     list-style: none;
 }
+
 .link:hover,
 .link:focus {
     color: var(--accent-color);
@@ -41,60 +45,69 @@ letter-spacing: 0.03em;
     background-color: var(--footer-color);
 }
 
-.header-nav .header-link.current{
-color: var(--text-color-tittle);
+.header-nav .header-link.current {
+    color: var(--text-color-tittle);
 }
 
 /*   Стили хедера  */
-.header-list{
-color: var(--text-color-tittle);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
+.header-list {
+    color: var(--text-color-tittle);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
- 
-.header-link-contakts{
-color: var(--text-color-first);
+
+.header-link-contakts {
+    color: var(--text-color-first);
 }
-.logo{
+
+.logo {
     color: var(--accent-color);
-    font-family:var(--logo-font);
+    font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.logo-studio{
+
+.logo-studio {
     color: var(--text-color-tittle);
 }
 
 /*   Стили футера  */
-.footer-address{
+.footer-address {
     color: var(--text-banner-color);
     font-style: normal;
 }
-.footer-link{
+
+.footer-link {
     color: var(--text-color-footer);
 }
 
+.logo-studio-footer{
+    color: var(--bakrnd-color-first);
+}
 /*   Стили main  */
 
-.banner-button{
+.banner-button {
     font-family: var(--first-font);
     color: var(--text-banner-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
-.title{
-color: var(--text-color-tittle);
-font-weight: 700;
-line-height: 1.14;
+.title {
+    color: var(--text-color-tittle);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
 }
 
-.team-title, .works-title{
+.team-title,
+.works-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -105,11 +118,13 @@ line-height: 1.14;
     font-size: 16px;
     line-height: 1.188;
 }
-.team-worker-descr{
+
+.team-worker-descr {
     font-size: 16px;
     line-height: 1.188;
 }
-.banner-title{
+
+.banner-title {
     color: var(--text-banner-color);
     font-weight: 900;
     font-size: 44px;
@@ -120,30 +135,32 @@ line-height: 1.14;
 }
 
 /* Портфолио стили */
- .example-title {
+.example-title {
     color: var(--text-color-tittle);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.example-desc{
+
+.example-desc {
     color: var(--text-color-first);
     font-size: 16px;
     line-height: 1.86;
 }
 
-.portfolio-menu{
+.portfolio-menu {
     color: var(--text-color-tittle);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        letter-spacing: 0.03em;
-        cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
-.portfolio-menu:hover, .portfolio-menu:focus{
+.portfolio-menu:hover,
+.portfolio-menu:focus {
     color: var(--text-banner-color);
     background-color: var(--accent-color);
 }
