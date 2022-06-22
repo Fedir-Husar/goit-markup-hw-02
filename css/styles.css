@@ -28,12 +28,14 @@ body {
     line-height: 1.71;
 }
 .link {
+    color: var(--text-color-tittle);
     text-decoration: none;
 }
 
 .list {
     list-style: none;
 }
+
 
 .link:hover,
 .link:focus {
@@ -51,7 +53,6 @@ body {
 
 /*   Стили хедера  */
 .header-list {
-    color: var(--text-color-tittle);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -79,6 +80,7 @@ body {
 .footer-address {
     color: var(--text-banner-color);
     font-style: normal;
+    line-height: 1.71;
 }
 
 .footer-link {
@@ -150,6 +152,7 @@ body {
 }
 
 .portfolio-menu {
+    font-family: var(--first-font);
     color: var(--text-color-tittle);
     font-weight: 500;
     font-size: 16px;
